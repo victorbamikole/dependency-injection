@@ -7,7 +7,7 @@ import retrofit2.Response
 import javax.inject.Inject
 
 class MainRepository @Inject constructor(private val api: RetroService) {
-    suspend fun getPosts(): Response<List<UserItem>> {
+    suspend fun getPosts(): List<UserItem> {
         return api.getDataFromApi()
     }
 }

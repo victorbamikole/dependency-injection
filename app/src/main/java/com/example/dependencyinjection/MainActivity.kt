@@ -20,7 +20,7 @@ class MainActivity : AppCompatActivity() {
 
     private fun initViewModel(): MainActivityViewModel{
 //        val viewModel = ViewModelProvider(this).get(MainActivityViewModel::class.java)
-        viewModel.recyclerListLiveData.observe(this, {
+        viewModel._recyclerList.observe(this, {
             if (it != null) {
 //                bindDetails(it)
             } else {
